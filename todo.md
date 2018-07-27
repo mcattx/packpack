@@ -1,0 +1,14 @@
+- [ ] 通用基础配置
+- [ ] 通用 loader
+- [ ] 通用 plugin
+- [ ] 热更新
+- [ ] Javascript/CSS/images 压缩
+- [ ] Sass
+- [ ] Less
+- [ ] Stylus
+- [ ] PostCSS
+- [ ] Eslint
+- [ ] babel
+- [ ] 开发, 测试, 正式环境
+- [ ] 插件化
+- [ ] 类似 vue-cli 3.0 的图形化界面
