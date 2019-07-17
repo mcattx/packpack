@@ -1,6 +1,6 @@
 {
   "name": "packpack",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a solution based on webpack",
   "main": "index.js",
   "directories": {
@@ -8,6 +8,7 @@
     "test": "test"
   },
   "scripts": {
+    "custom": "http-server -c1 ./custom",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/titancat/packpack/issues"
   },
-  "homepage": "https://github.com/titancat/packpack#readme"
+  "homepage": "https://github.com/titancat/packpack#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }

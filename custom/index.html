@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Packpack Custom Mode</title>
+  <link rel="stylesheet" href="./index.css?a">
+</head>
+<body>
+  <div id="app">
+    <div id="container">
+      <h1 class="title">Packpack Custom</h1>
+      <section>
+        <div class="name">Loader</div>
+        <div class="options">
+          <label class="radio" v-for="item in loaderOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Plugin</div>
+        <div class="options">
+          <label class="radio" v-for="item in pluginOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Babel</div>
+        <div class="options">
+          <label class="radio" v-for="item in babelOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Javascript Library</div>
+        <div class="options">
+          <label class="radio" v-for="item in libraryOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item" v-model="config.library">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Css Preprocessor</div>
+        <div class="options">
+          <label class="radio" v-for="item in cssPreprocessorOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item" v-model="config.cssPreprocessor">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Lint Tool</div>
+        <div class="options">
+          <label class="radio" v-for="item in lintOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item" v-model="config.lint">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+      <section>
+        <div class="name">Typescript</div>
+        <div class="options">
+          <label class="radio" v-for="item in typescriptOptions">
+            <span class="radio__input">
+              <span class="radio__inner"></span>
+              <input type="radio" :value="item" v-model="config.typescript">
+            </span>
+            <span class="radio__label">{{ item }}</span>
+          </label>
+        </div>
+      </section>
+    </div>
+    <div id="ball">
+      <button @click="confirm">Done</button>
+      <button @click="reset">Reset</button>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="./index.js"></script>
+</html>
